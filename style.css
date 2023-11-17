@@ -1,0 +1,33 @@
+:root {
+    --size: 'from js';
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #252525;
+}
+
+body canvas {
+    position: absolute;
+    left: calc(50% - (var(--size))/2);
+    top: calc(50% - (var(--size))/2);
+    width: var(--size);
+    height: var(--size);
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+body canvas:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+body li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+}

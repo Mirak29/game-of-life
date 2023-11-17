@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Game of life</title>
 </head>
 <body>
-    <canvas id="map"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <div id="start-screen" class="screen" style="display: block;">
+        <audio id="mainMenuAudio" loop>
+            <source src="sounds/The Promised Neverland OST - Isabella’s Lullaby (mp3cut.net).mp3" type="audio/mp3">
+        </audio>
+        <button id="start">
+            <img src="fonts/infinity-loop-3229.png" alt="">
+            <span class="now">now!</span>
+            <span class="play">play</span>
+        </button>
+    </div>
 </body>
 </html>

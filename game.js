@@ -82,7 +82,6 @@ function menu() {
     gui.add(btns, 'Run');
     gui.add(btns, 'Stop');
     gui.add(btns, 'Clear');
-
     const addResizeListener = (controller) => {
         if (!controller.__button) {
             controller.onChange(resize);
@@ -169,6 +168,9 @@ function defineCell(cell) {
         cell.status = cell.status === 'alive' ? 'dead' : 'alive';
         drawCell(cell);
     }
+    const clickSound = document.getElementById('clickSound');
+    clickSound.pause();
+    clickSound.play();
 }
 
 let pressed = false,

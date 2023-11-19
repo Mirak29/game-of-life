@@ -1,4 +1,5 @@
-import { resize, canvas } from "./map.js";
+import { resize, canvas, menu, update } from "./game.js";
+
 const start = document.getElementById("start");
 const homeSound = document.getElementById("mainMenuAudio")
 homeSound.play()
@@ -9,6 +10,9 @@ start.addEventListener("click", () => {
   home.style.display = "none";
   document.body.style.background = "#252525"
   document.body.appendChild(canvas);
-    resize()
+  resize();
+  window.addEventListener('resize', resize);
+  menu()
+  update();
 });
 

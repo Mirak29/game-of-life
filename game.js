@@ -12,8 +12,8 @@ const set = {
 };
 
 const colors = {
-    dead: '#FFFFFF',
-    alive: '#000000',
+    dead: '#787878',
+    alive: '#2FA1D6',
 };
 
 class Cell {
@@ -95,7 +95,7 @@ function menu() {
     });
 }
 
-function checkStatus(cell) {
+function countAliveNeighbours(cell) {
     const { i, j } = cell;
     const neighbours = [];
     let aliveCount = 0;
@@ -114,11 +114,32 @@ function checkStatus(cell) {
         }
     }
 
+    return aliveCount;
+}
+
+function checkStatus(cell) {
+    const aliveCount = countAliveNeighbours(cell);
+
     if (cell.status === 'alive') {
         cell.tmp = aliveCount === 2 || aliveCount === 3 ? 'alive' : 'dead';
     } else {
         cell.tmp = aliveCount === 3 ? 'alive' : 'dead';
     }
+}
+
+function updateLiveCellCounter() {
+    let liveCellCount = 0;
+
+    for (const row of cells) {
+        for (const cell of row) {
+            if (cell.status === 'alive') {
+                liveCellCount++;
+            }
+        }
+    }
+
+    // Mettez à jour l'élément HTML avec le nombre de cellules vivantes
+    document.getElementById('liveCellCount').textContent = liveCellCount;
 }
 
 function life() {
@@ -135,6 +156,7 @@ function life() {
         }
     }
 }
+
 
 function findCellByPos(x, y) {
     const i = Math.floor(x / cellSize);
@@ -188,6 +210,7 @@ function update() {
     }
     tick++;
     window.requestAnimFrame(update);
+    updateLiveCellCounter()
 }
 
 export { canvas, resize, menu, update };

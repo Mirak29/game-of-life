@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -86,4 +86,22 @@ body li {
 #start:hover .play {
     transform: translateX(200%);
     transition-delay: 300ms;
+}
+
+
+.alive{
+    position: absolute;
+    float: left; /* Utilisation de float pour placer l'élément à gauche */
+    margin-right: 10px; /* Marge à droite pour espacer l'élément du texte voisin */
+    left: 9%;
+    font-size: large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px outset;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #2FA1D6;
 }

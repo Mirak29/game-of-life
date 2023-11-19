@@ -11,6 +11,14 @@ start.addEventListener("click", () => {
   document.body.style.background = "#252525"
   document.body.appendChild(canvas);
   resize();
+  let alive = document.createElement("div")
+  alive.textContent = "Alive cells"
+  alive.className = "alive"
+  let aliveCounter = document.createElement("div");
+  aliveCounter.id = "liveCellCount";
+  aliveCounter.textContent = "0";
+  document.body.appendChild(alive);
+  alive.appendChild(aliveCounter);
   window.addEventListener('resize', resize);
   menu()
   update();

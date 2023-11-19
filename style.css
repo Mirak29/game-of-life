@@ -105,3 +105,12 @@ body li {
     padding: 10px;
     background-color: #2FA1D6;
 }
+
+@media screen and (max-width: 768px) {
+    .alive {
+      position: fixed;
+      bottom: 10px; /* Ajustez la distance depuis le bas selon votre préférence */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

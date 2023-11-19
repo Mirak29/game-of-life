@@ -24,13 +24,21 @@ Ce jeu de simulation de vie cellulaire est une implémentation utilisant HTML Ca
    - Utilisez l'interface pour démarrer, arrêter ou effacer la grille.
    - Ajustez la taille de la grille et la vitesse d'évolution à l'aide des commandes disponibles.
 
-## Configuration et Développement
+## Conseils pour les Sons
 
-- **Modification des Paramètres**:
-  - Dans le fichier `main.js`, les paramètres tels que la taille de la grille, les couleurs et la vitesse d'évolution sont ajustables.
+Certains navigateurs peuvent bloquer les sons qui démarrent automatiquement pour offrir une meilleure expérience de navigation. Voici comment autoriser les sons dans certains navigateurs :
 
-- **Ajout de Fonctionnalités**:
-  - Pour ajouter de nouvelles fonctionnalités ou modifier le comportement du jeu, explorez les différentes fonctions dans `main.js`.
+### Google Chrome
 
-## Crédits
-Ce jeu de simulation de vie cellulaire a été créé en utilisant HTML, CSS et JavaScript.
+1. Accédez à `chrome://settings/content/sound` dans la barre d'adresse.
+2. Activez l'option "Autoriser les sites à jouer les sons (recommandé)".
+
+### Mozilla Firefox
+
+1. Accédez à `about:preferences#privacy` dans la barre d'adresse.
+2. Sous "Permissions", cliquez sur "Paramètres" à côté de "Notifications".
+3. Assurez-vous que le site du jeu est autorisé à jouer les sons.
+
+Ces étapes peuvent différer légèrement selon les versions des navigateurs, mais cela devrait vous donner une idée générale de la manière d'autoriser les sons dans votre navigateur.
+
+Vous pouvez accéder directement au jeu [ici](https://game-of-life-mu-wine.vercel.app/).

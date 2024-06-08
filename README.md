@@ -1,44 +1,44 @@
-# Jeu de Simulation de Vie Cellulaire
+# Cellular Automata Life Simulation Game
 
-Ce jeu de simulation de vie cellulaire est une implémentation utilisant HTML Canvas et JavaScript pour créer un automate cellulaire basé sur des règles simples.
+This cellular automata life simulation game is an implementation using HTML Canvas and JavaScript to create a cellular automaton based on simple rules.
 
-## Fonctionnalités
+## Features
 
-- **Grille de cellules**: Une grille est affichée sur le canvas où chaque cellule peut être dans un état vivant ou mort.
-- **Interaction Utilisateur**: Les utilisateurs peuvent interagir avec les cellules en cliquant ou en faisant glisser la souris pour changer leur état.
-- **Évolution Automatique**: Les cellules évoluent automatiquement selon des règles spécifiques après le lancement du jeu.
-- **Paramètres Configurables**: Utilisez l'interface utilisateur pour ajuster la taille de la grille, la vitesse d'évolution et les couleurs.
+- **Cell Grid**: A grid is displayed on the canvas where each cell can be in either a living or dead state.
+- **User Interaction**: Users can interact with the cells by clicking or dragging the mouse to change their state.
+- **Automatic Evolution**: Cells evolve automatically according to specific rules after the game is launched.
+- **Configurable Parameters**: Use the user interface to adjust grid size, evolution speed, and colors.
 
-## Comment Jouer
+## How to Play
 
 1. **Installation**:
-   - Téléchargez ou clonez ce dépôt.
-   - Utilisez Live Server pour lancer le jeu.
-   - Si vous utilisez Visual Studio Code, installez l'extension "Live Server" et ouvrez le fichier `index.html`. Cliquez avec le bouton droit et sélectionnez "Open with Live Server".
+   - Download or clone this repository.
+   - Use Live Server to launch the game.
+   - If using Visual Studio Code, install the "Live Server" extension and open the `index.html` file. Right-click and select "Open with Live Server".
 
 2. **Interaction**:
-   - Cliquez sur une cellule pour la faire passer de vivante à morte, et vice versa.
-   - Maintenez enfoncé et faites glisser la souris pour changer l'état de plusieurs cellules à la fois.
+   - Click on a cell to toggle its state between alive and dead.
+   - Hold down and drag the mouse to change the state of multiple cells at once.
 
-3. **Contrôles**:
-   - Utilisez l'interface pour démarrer, arrêter ou effacer la grille.
-   - Ajustez la taille de la grille et la vitesse d'évolution à l'aide des commandes disponibles.
+3. **Controls**:
+   - Use the interface to start, stop, or clear the grid.
+   - Adjust grid size and evolution speed using the available controls.
 
-## Conseils pour les Sons
+## Sound Tips
 
-Certains navigateurs peuvent bloquer les sons qui démarrent automatiquement pour offrir une meilleure expérience de navigation. Voici comment autoriser les sons dans certains navigateurs :
+Some browsers may block sounds that start automatically to provide a better browsing experience. Here's how to allow sounds in some browsers:
 
 ### Google Chrome
 
-1. Accédez à `chrome://settings/content/sound` dans la barre d'adresse.
-2. Activez l'option "Autoriser les sites à jouer les sons (recommandé)".
+1. Go to `chrome://settings/content/sound` in the address bar.
+2. Enable the option "Allow sites to play sounds (recommended)".
 
 ### Mozilla Firefox
 
-1. Accédez à `about:preferences#privacy` dans la barre d'adresse.
-2. Sous "Permissions", cliquez sur "Paramètres" à côté de "Notifications".
-3. Assurez-vous que le site du jeu est autorisé à jouer les sons.
+1. Go to `about:preferences#privacy` in the address bar.
+2. Under "Permissions," click on "Settings" next to "Notifications".
+3. Ensure the game site is allowed to play sounds.
 
-Ces étapes peuvent différer légèrement selon les versions des navigateurs, mais cela devrait vous donner une idée générale de la manière d'autoriser les sons dans votre navigateur.
+These steps may vary slightly depending on browser versions, but they should give you a general idea of how to allow sounds in your browser.
 
-Vous pouvez accéder directement au jeu [ici](https://game-of-life-mu-wine.vercel.app/).
+You can access the game directly [here](https://game-of-life-mu-wine.vercel.app/).
